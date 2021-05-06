@@ -32,5 +32,5 @@ public interface TableDetails {
     String T_FINAL_BALANCE = "finalbalance";
     String T_AMOUNT = "amount";
     String T_STAMP = "stamp";
-    
+}
     
