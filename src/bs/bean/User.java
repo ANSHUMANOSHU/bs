@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.sql.rowset.serial.SerialBlob;
 
-public class User {
+public class User implements TableDetails{
 	String accountNumber,name,aadhar,pan,address,contact;
 	byte[] image;
 	
