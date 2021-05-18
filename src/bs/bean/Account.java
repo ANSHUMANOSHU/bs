@@ -60,7 +60,7 @@ public class Account implements TableDetails {
             String QUERY = "update " + TABLE_ACCOUNT + " set "
                     + A_PASSWORD + " = ?,"
                     + A_BALANCE + " = ?"
-                    + " where " + A_ACCOUNT_NUMBER + " = ?";
+                    + " where " + A_ACCOUNT_NUMBER + " = ?";    // updates password and balance
 
             PreparedStatement preparedStatement = connection.prepareStatement(QUERY);
             preparedStatement.setString(1, getPassword());
@@ -74,7 +74,7 @@ public class Account implements TableDetails {
     }
 
     //STATIC METHODS
-    public static boolean save(Account account) {
+    public static boolean save(Account account) { // save account details
         try {
 
             String QUERY = " insert into " + TABLE_ACCOUNT
@@ -104,7 +104,7 @@ public class Account implements TableDetails {
         return false;
     }
     
-    public static boolean delete(String accoutNumber) {
+    public static boolean delete(String accoutNumber) {// deletes account from database
         try {
             String QUERY = "delete from " + TABLE_ACCOUNT  + " where " + A_ACCOUNT_NUMBER + " = \"" + accoutNumber + "\"";
             Connection connection = Database.getConnection();
@@ -116,10 +116,10 @@ public class Account implements TableDetails {
         return false;
     }
     
-    public void deposit(float amount, String description) {
+    public void deposit(float amount, String description) { // deposits money into account
         Account account = new Account(accountNumber);
         account.setBalance(account.getBalance() + amount);
-        account.update();
+        account.update();   // calls update method
 
         Transaction transaction = new Transaction();
         transaction.setAccountNumber(accountNumber);
@@ -132,7 +132,7 @@ public class Account implements TableDetails {
 
     }
 
-    public boolean withdraw(float amount, String description) {
+    public boolean withdraw(float amount, String description) { // for money withdrawl
         Account account = new Account(accountNumber);
 
         if (amount > account.getBalance() || amount<=0) {
