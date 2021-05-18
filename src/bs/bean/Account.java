@@ -135,7 +135,7 @@ public class Account implements TableDetails {
     public boolean withdraw(float amount, String description) {
         Account account = new Account(accountNumber);
 
-        if (amount > account.getBalance()) {
+        if (amount > account.getBalance() || amount<=0) {
             return false;
         }
 
