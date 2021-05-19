@@ -40,7 +40,7 @@ public class Login extends javax.swing.JFrame {
         forgotpass.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
         forgotpass.setForeground(new java.awt.Color(204, 0, 0));
         forgotpass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        forgotpass.setText("Forgot Password? Click here to Reset");
+        forgotpass.setText("Forgot Password? ");
         forgotpass.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         forgotpass.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
