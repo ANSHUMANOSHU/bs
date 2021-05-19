@@ -61,8 +61,8 @@ public class Dashboard extends JFrame implements ActionListener {
     public Dashboard(String accountNumber) {
         setTitle(WINDOW_TITLE);
         setResizable(false);
-        setSize(windowSize);
-        setLocationRelativeTo(null);
+        setSize(windowSize); 
+        setLocationRelativeTo(null); // keeps window at the center
         setLayout(gridLayout);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.accountNumber = accountNumber;
@@ -98,7 +98,7 @@ public class Dashboard extends JFrame implements ActionListener {
         } else if (BUTTON_NAMES[6].equalsIgnoreCase(command)) {
             logoff();
         } else if (BUTTON_NAMES[7].equalsIgnoreCase(command)) {
-            int response = JOptionPane.showConfirmDialog(null, "Are you sure want to delete account ?", "Confirm", JOptionPane.YES_NO_OPTION);
+            int response = JOptionPane.showConfirmDialog(null, "Do you want to delete account ?", "Confirm", JOptionPane.YES_NO_OPTION);
             if (response == JOptionPane.YES_OPTION) {
                 dashboardViewController.deleteAccount();
                 logoff();
