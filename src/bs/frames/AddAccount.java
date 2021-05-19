@@ -307,7 +307,7 @@ public class AddAccount extends javax.swing.JFrame {
                     || _sques.isEmpty() || _sans.isEmpty()
                     || _address.isEmpty() || _pass.isEmpty()
                     || imagePath == null || imagePath.isEmpty()) {
-                JOptionPane.showMessageDialog(null, "Some fields are missings", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Some fields are missing", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
 
