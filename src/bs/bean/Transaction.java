@@ -176,7 +176,7 @@ public class Transaction implements TableDetails {
     
     @Override
     public String toString() {
-        return "{" + "id=" + id + "\n accountNumber=" + accountNumber + "\n description=" + description + "\n type=" + type + "\n finalBalance=" + finalBalance + "\n amount=" + amount + "\n stamp=" + Utils.toDateTimeString(stamp) + '}';
+        return "{" + "ID: " + id + "\nAccount Number: " + accountNumber + "\nDescription: " + description + "\nTransaction Type: " + type + "\nFinal Balance: " + finalBalance + "\nAmount: " + amount + "\nTime: " + Utils.toDateTimeString(stamp) + '}';
     }
     
 }
