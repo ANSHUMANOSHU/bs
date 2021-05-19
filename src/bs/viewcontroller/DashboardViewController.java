@@ -130,6 +130,7 @@ public class DashboardViewController {
             float temp = Float.parseFloat(number);
             return temp > 0;
         } catch (Exception ignore) {
+            System.out.println("DashBoardViewController Line 133" + ignore);
         }
         return false;
     }
