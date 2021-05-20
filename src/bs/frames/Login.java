@@ -170,12 +170,11 @@ public class Login extends javax.swing.JFrame {
         addAccount.setVisible(true);
     }//GEN-LAST:event_newaccountActionPerformed
 
-    
     public static void main(String[] args) {
         new Login().setVisible(true);
-        
+
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ano;
     private javax.swing.JLabel forgotpass;

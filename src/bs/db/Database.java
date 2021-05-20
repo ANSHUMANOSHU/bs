@@ -1,4 +1,3 @@
-
 package bs.db;
 
 import java.sql.Connection;
@@ -17,13 +16,17 @@ public class Database extends Credentials {
         }
 
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            // Registers the mentioned driver
+            Class.forName(DRIVER); 
+
+            // returns connection with the database using the registered driver
             connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
+
         } catch (SQLException | ClassNotFoundException ex) {
             JOptionPane.showMessageDialog(null, "Database INIT Error : " + ex.getMessage());
             System.exit(0);
         }
         return connection;
     }
-    
+
 }
