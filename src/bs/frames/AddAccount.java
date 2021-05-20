@@ -55,7 +55,7 @@ public class AddAccount extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(150, 150));
-
+        
         image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bs/frames/user.png"))); // NOI18N
         image.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
