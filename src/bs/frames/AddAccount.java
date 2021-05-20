@@ -55,7 +55,7 @@ public class AddAccount extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(150, 150));
-        
+
         image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bs/frames/user.png"))); // NOI18N
         image.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -116,6 +116,11 @@ public class AddAccount extends javax.swing.JFrame {
         sques.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
 
         name.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameActionPerformed(evt);
+            }
+        });
 
         address.setColumns(20);
         address.setRows(5);
@@ -345,6 +350,10 @@ public class AddAccount extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_submitbtnActionPerformed
+
+    private void nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameActionPerformed
 
     
 

@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ANSHUMAN%20Panday/Documents/NetBeansProjects/bs/src/bs/db/Credentials.java</file>
             <file>file:/C:/Users/ANSHUMAN%20Panday/Documents/NetBeansProjects/bs/src/bs/bean/Account.java</file>
-            <file>file:/C:/Users/ANSHUMAN%20Panday/Documents/NetBeansProjects/bs/src/bs/db/Database.java</file>
             <file>file:/C:/Users/ANSHUMAN%20Panday/Documents/NetBeansProjects/bs/src/bs/frames/Login.java</file>
+            <file>file:/C:/Users/ANSHUMAN%20Panday/Documents/NetBeansProjects/bs/src/bs/viewcontroller/DashboardViewController.java</file>
+            <file>file:/C:/Users/ANSHUMAN%20Panday/Documents/NetBeansProjects/bs/src/bs/frames/TableFrame.java</file>
+            <file>file:/C:/Users/ANSHUMAN%20Panday/Documents/NetBeansProjects/bs/src/bs/frames/AddAccount.java</file>
         </group>
     </open-files>
 </project-private>
